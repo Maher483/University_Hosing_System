@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="Room_ap" prefHeight="585.6" prefWidth="699.2" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.uni_housing.RoomsController">
+   <children>
+      <TextField fx:id="R_roomtextF" layoutX="159.0" layoutY="32.0" prefHeight="30.0" prefWidth="269.0" promptText="Room Name" style="-fx-background-color: TRANSPARENT; -fx-border-color: #EE964B; -fx-border-width: 0px 0px 2px 0px;" />
+      <ScrollPane layoutX="207.0" layoutY="91.0" prefHeight="447.0" prefWidth="481.0">
+         <content>
+            <TableView fx:id="R_tableview" prefHeight="446.0" prefWidth="542.0" style="-fx-background-color: #FAF0CA;">
+               <columns>
+                  <TableColumn fx:id="R_roomNameC" prefWidth="150.40002137422562" text="Room Name" />
+                  <TableColumn fx:id="R_buildingNameC" minWidth="0.0" prefWidth="93.5999755859375" text="Building Name" />
+                  <TableColumn fx:id="R_availabillityC" prefWidth="54.40003967285156" text="Availability" />
+                  <TableColumn fx:id="R_bed1C" prefWidth="108.79998779296875" text="Bed 1" />
+                  <TableColumn fx:id="R_bed2C" prefWidth="111.99996948242188" text="Bed 2" />
+               </columns>
+            </TableView>
+         </content>
+      </ScrollPane>
+      <JFXButton fx:id="R_searchB" layoutX="455.0" layoutY="31.0" onAction="#Search_R" prefHeight="22.0" prefWidth="86.0" ripplerFill="#ee964b" style="-fx-border-color: #EE964B; -fx-border-radius: 25; -fx-background-radius: 25;" text="Search">
+         <font>
+            <Font name="Dubai Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <TextField fx:id="R_roomtextFadd" layoutX="27.0" layoutY="99.0" prefHeight="30.0" prefWidth="150.0" promptText="Room Name" style="-fx-background-color: TRANSPARENT; -fx-border-color: #EE964B; -fx-border-width: 0px 0px 2px 0px;" />
+      <ComboBox fx:id="R_comobox" layoutX="27.0" layoutY="164.0" prefWidth="150.0" promptText="Buildings" style="-fx-background-color: TRANSPARENT; -fx-border-color: #EE964B; -fx-border-width: 1.5; -fx-border-radius: 20; -fx-background-radius: 20;" />
+      <JFXButton fx:id="R_addB" layoutX="59.0" layoutY="243.0" onAction="#AddRoom" prefHeight="22.0" prefWidth="86.0" ripplerFill="#ee964b" style="-fx-border-color: #EE964B; -fx-border-radius: 25; -fx-background-radius: 25;" text="Add">
+         <font>
+            <Font name="Dubai Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <Label fx:id="R_errortext" alignment="CENTER" layoutX="14.0" layoutY="217.0" prefHeight="26.0" prefWidth="175.0" textAlignment="CENTER" textFill="RED">
+         <font>
+            <Font name="Dubai Regular" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="R_roomnamelable" alignment="CENTER" layoutX="14.0" layoutY="333.0" prefHeight="18.0" prefWidth="175.0" textAlignment="CENTER">
+         <font>
+            <Font name="Dubai Regular" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="R_buildingnamelable" alignment="CENTER" layoutX="14.0" layoutY="365.0" prefHeight="18.0" prefWidth="175.0" textAlignment="CENTER">
+         <font>
+            <Font name="Dubai Regular" size="12.0" />
+         </font>
+         <padding>
+            <Insets top="5.0" />
+         </padding>
+      </Label>
+      <Label fx:id="R_availalable" alignment="CENTER" layoutX="14.0" layoutY="397.0" prefHeight="18.0" prefWidth="175.0" textAlignment="CENTER">
+         <font>
+            <Font name="Dubai Regular" size="12.0" />
+         </font>
+         <padding>
+            <Insets top="5.0" />
+         </padding>
+      </Label>
+      <Label fx:id="R_bed1lable" alignment="CENTER" layoutX="14.0" layoutY="429.0" prefHeight="18.0" prefWidth="175.0" textAlignment="CENTER">
+         <font>
+            <Font name="Dubai Regular" size="12.0" />
+         </font>
+         <padding>
+            <Insets top="5.0" />
+         </padding>
+      </Label>
+      <Label fx:id="R_bed2lable" alignment="CENTER" layoutX="14.0" layoutY="461.0" prefHeight="18.0" prefWidth="175.0" textAlignment="CENTER">
+         <font>
+            <Font name="Dubai Regular" size="12.0" />
+         </font>
+         <padding>
+            <Insets top="5.0" />
+         </padding>
+      </Label>
+   </children>
+</AnchorPane>

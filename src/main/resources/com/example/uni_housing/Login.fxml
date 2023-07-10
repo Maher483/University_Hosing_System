@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="Login_AP" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.uni_housing.LoginController">
+   <children>
+      <AnchorPane prefHeight="400.0" prefWidth="300.0" style="-fx-background-color: #023047;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label alignment="CENTER" layoutX="17.0" layoutY="221.0" prefHeight="42.0" prefWidth="266.0" text=" administration" textFill="WHITE">
+               <font>
+                  <Font name="Dubai Regular" size="22.0" />
+               </font>
+            </Label>
+            <Label layoutX="74.0" layoutY="200.0" text="University housing" textFill="WHITE">
+               <font>
+                  <Font name="Dubai Regular" size="20.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="124.0" fitWidth="200.0" layoutX="50.0" layoutY="63.0">
+               <image>
+                  <Image url="@Logo.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="292.0" prefHeight="400.0" prefWidth="300.0" style="-fx-background-color: #ffffff;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="300.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label alignment="CENTER" layoutY="60.0" prefHeight="42.0" prefWidth="86.0" text="Login" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+               <font>
+                  <Font name="Perpetua Bold" size="34.0" />
+               </font>
+            </Label>
+            <TextField fx:id="UserName_T" layoutX="74.0" layoutY="174.0" prefHeight="30.0" prefWidth="200.0" promptText="User Name" style="-fx-background-color: TRANSPARENT; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: #ee964b;" AnchorPane.leftAnchor="74.0" AnchorPane.rightAnchor="76.4" />
+            <PasswordField fx:id="Password_T" layoutX="74.0" layoutY="214.0" prefHeight="30.0" prefWidth="200.0" promptText="Password" style="-fx-background-color: TRANSPARENT; -fx-border-color: #ee964b; -fx-border-width: 0px 0px 2px 0px;" AnchorPane.leftAnchor="74.0" AnchorPane.rightAnchor="76.4" />
+            <JFXButton fx:id="Close_B" layoutX="241.0" layoutY="14.0" onAction="#Close" ripplerFill="RED" style="-fx-background-radius: 25; -fx-border-radius: 25;" text="Close">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="Login_B" layoutX="100.0" layoutY="296.0" onAction="#Login" prefHeight="30.0" prefWidth="100.0" ripplerFill="#ee964b" style="-fx-border-color: #ee964b; -fx-border-width: 0px 0px 2px 0px; -fx-background-radius: 25; -fx-border-radius: 25;" text="Login">
+               <font>
+                  <Font name="Dubai Bold" size="16.0" />
+               </font>
+            </JFXButton>
+            <Label fx:id="Error_text" alignment="CENTER" layoutX="35.0" layoutY="359.0" prefHeight="26.0" prefWidth="230.0" textAlignment="CENTER" textFill="RED">
+               <font>
+                  <Font name="Dubai Regular" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

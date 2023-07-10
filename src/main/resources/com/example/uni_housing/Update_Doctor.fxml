@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="Update_doc_ap" prefHeight="585.6" prefWidth="699.2" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.uni_housing.UpdateDoctorController">
+   <children>
+      <Text layoutX="258.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Update Doctor" textOrigin="CENTER">
+         <font>
+            <Font name="Dubai Bold" size="33.0" />
+         </font>
+      </Text>
+      <TextField fx:id="UD_name" layoutX="83.0" layoutY="189.0" prefHeight="30.0" prefWidth="200.0" promptText="Name" style="-fx-background-color: TRANSPARENT; -fx-border-color: #ee964b; -fx-border-width: 0px 0px 2px 0px;" />
+      <TextField fx:id="UD_gender" layoutX="441.0" layoutY="245.0" prefHeight="30.0" prefWidth="200.0" promptText="Gender" style="-fx-background-color: TRANSPARENT; -fx-border-color: #ee964b; -fx-border-width: 0px 0px 2px 0px;" />
+      <TextField fx:id="UD_mobile" layoutX="83.0" layoutY="309.0" prefHeight="30.0" prefWidth="200.0" promptText="Mobile Number" style="-fx-background-color: TRANSPARENT; -fx-border-color: #ee964b; -fx-border-width: 0px 0px 2px 0px;" />
+      <TextField fx:id="UD_email" layoutX="83.0" layoutY="246.0" prefHeight="30.0" prefWidth="200.0" promptText="Email" style="-fx-background-color: TRANSPARENT; -fx-border-color: #ee964b; -fx-border-width: 0px 0px 2px 0px;" />
+      <TextField fx:id="UD_nationalID" layoutX="441.0" layoutY="188.0" prefHeight="30.0" prefWidth="200.0" promptText="National ID" style="-fx-background-color: TRANSPARENT; -fx-border-color: #ee964b; -fx-border-width: 0px 0px 2px 0px;" />
+      <DatePicker fx:id="UD_start" layoutX="441.0" layoutY="308.0" prefHeight="30.0" prefWidth="90.0" promptText="From" style="-fx-background-color: TRANSPARENT; -fx-border-color: #ee964b; -fx-border-width: 0px 0px 2px 0px;" />
+      <DatePicker fx:id="UD_end" layoutX="550.0" layoutY="308.0" prefHeight="30.0" prefWidth="90.0" promptText="To" style="-fx-background-color: TRANSPARENT; -fx-border-color: #ee964b; -fx-border-width: 0px 0px 2px 0px;" />
+      <JFXButton fx:id="UD_UpdateB" layoutX="137.0" layoutY="456.0" onAction="#Update_D" prefHeight="37.0" prefWidth="158.0" ripplerFill="#ee964b" style="-fx-border-color: #ee964b; -fx-border-radius: 25; -fx-background-radius: 25; -fx-border-width: 0px 0px 2px 0px;" text="Update" textAlignment="CENTER">
+         <font>
+            <Font name="Dubai Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <TextField fx:id="UD_nationalIdSearch" layoutX="172.0" layoutY="106.0" prefHeight="30.0" prefWidth="269.0" promptText="National ID" style="-fx-background-color: TRANSPARENT; -fx-border-color: #EE964B; -fx-border-width: 0px 0px 2px 0px;" />
+      <JFXButton fx:id="UD_searchB" layoutX="466.0" layoutY="106.0" onAction="#Search_D" prefHeight="22.0" prefWidth="86.0" ripplerFill="#ee964b" style="-fx-border-color: #EE964B; -fx-border-radius: 25; -fx-background-radius: 25;" text="Search">
+         <font>
+            <Font name="Dubai Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <TextField fx:id="UD_roomNum" layoutX="83.0" layoutY="371.0" prefHeight="30.0" prefWidth="200.0" promptText="Room Number" style="-fx-background-color: TRANSPARENT; -fx-border-color: #ee964b; -fx-border-width: 0px 0px 2px 0px;" />
+      <JFXButton fx:id="UD_remove" layoutX="407.0" layoutY="456.0" onAction="#Remove_D" prefHeight="37.0" prefWidth="158.0" ripplerFill="#ee964b" style="-fx-border-color: #ee964b; -fx-border-radius: 25; -fx-background-radius: 25; -fx-border-width: 0px 0px 2px 0px;" text="Remove" textAlignment="CENTER">
+         <font>
+            <Font name="Dubai Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <Label fx:id="UD_errortext" alignment="CENTER" layoutX="139.0" layoutY="430.0" prefHeight="18.0" prefWidth="446.0" textAlignment="CENTER" textFill="RED">
+         <font>
+            <Font name="Dubai Regular" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

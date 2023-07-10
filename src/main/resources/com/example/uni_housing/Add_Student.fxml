@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="Add_student_ap" prefHeight="585.6" prefWidth="699.2" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.uni_housing.AddStudentController">
+   <children>
+      <Text layoutX="273.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add Student" textOrigin="CENTER">
+         <font>
+            <Font name="Dubai Bold" size="33.0" />
+         </font>
+      </Text>
+      <TextField fx:id="AS_NAME" layoutX="83.0" layoutY="147.0" prefHeight="30.0" prefWidth="200.0" promptText="Name" style="-fx-background-color: TRANSPARENT; -fx-border-color: #ee964b; -fx-border-width: 0px 0px 2px 0px;" />
+      <TextField fx:id="AS_program" layoutX="431.0" layoutY="214.0" prefHeight="30.0" prefWidth="200.0" promptText="Program" style="-fx-background-color: TRANSPARENT; -fx-border-color: #ee964b; -fx-border-width: 0px 0px 2px 0px;" />
+      <TextField fx:id="AS_mobile" layoutX="431.0" layoutY="334.0" prefHeight="30.0" prefWidth="200.0" promptText="Mobile Number" style="-fx-background-color: TRANSPARENT; -fx-border-color: #ee964b; -fx-border-width: 0px 0px 2px 0px;" />
+      <TextField fx:id="AS_email" layoutX="83.0" layoutY="277.0" prefHeight="30.0" prefWidth="200.0" promptText="Email" style="-fx-background-color: TRANSPARENT; -fx-border-color: #ee964b; -fx-border-width: 0px 0px 2px 0px;" />
+      <TextField fx:id="AS_id" layoutX="83.0" layoutY="214.0" prefHeight="30.0" prefWidth="200.0" promptText="ID" style="-fx-background-color: TRANSPARENT; -fx-border-color: #ee964b; -fx-border-width: 0px 0px 2px 0px;" />
+      <TextField fx:id="AS_nationalID" layoutX="431.0" layoutY="147.0" prefHeight="30.0" prefWidth="200.0" promptText="National ID" style="-fx-background-color: TRANSPARENT; -fx-border-color: #ee964b; -fx-border-width: 0px 0px 2px 0px;" />
+      <DatePicker fx:id="AS_from" layoutX="431.0" layoutY="389.0" prefHeight="30.0" prefWidth="90.0" promptText="From" style="-fx-background-color: TRANSPARENT; -fx-border-color: #ee964b; -fx-border-width: 0px 0px 2px 0px;" />
+      <DatePicker fx:id="AS_to" layoutX="540.0" layoutY="389.0" prefHeight="30.0" prefWidth="90.0" promptText="To" style="-fx-background-color: TRANSPARENT; -fx-border-color: #ee964b; -fx-border-width: 0px 0px 2px 0px;" />
+      <JFXButton fx:id="AS_addB" layoutX="283.0" layoutY="456.0" onAction="#Add" prefHeight="37.0" prefWidth="158.0" ripplerFill="#ee964b" style="-fx-border-color: #ee964b; -fx-border-radius: 25; -fx-background-radius: 25; -fx-border-width: 0px 0px 2px 0px;" text="Add" textAlignment="CENTER">
+         <font>
+            <Font name="Dubai Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <TextField fx:id="AS_faculty" layoutX="431.0" layoutY="277.0" prefHeight="30.0" prefWidth="200.0" promptText="Faculty" style="-fx-background-color: TRANSPARENT; -fx-border-color: #ee964b; -fx-border-width: 0px 0px 2px 0px;" />
+      <Label fx:id="AS_errortext" alignment="CENTER" layoutX="139.0" layoutY="536.0" prefHeight="18.0" prefWidth="446.0" textAlignment="CENTER" textFill="RED">
+         <font>
+            <Font name="Dubai Regular" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="AS_roomNumLable" layoutX="86.0" layoutY="384.0" prefHeight="39.0" prefWidth="200.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="AS_GenderCompo" layoutX="86.0" layoutY="335.0" prefHeight="30.0" prefWidth="200.0" promptText="Gender" style="-fx-background-color: TRANSPARENT; -fx-border-color: #EE964B; -fx-border-width: 1.5; -fx-border-radius: 20; -fx-background-radius: 20;" />
+   </children>
+</AnchorPane>
